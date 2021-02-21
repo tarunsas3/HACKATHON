@@ -86,11 +86,13 @@ async function getContacts() {
 
 function listTickets() {
   var x = document.getElementById("form");
-  if (x.style.display === "block") {
-    x.style.display = "none";
-  } else {
-    x.style.display = "none";
-  }
+  x.style.display = "none";
+  var z = document.getElementById("Updateform");
+  z.style.display = "none";
+  var a = document.getElementById("statusForm");
+  a.style.display = "none";
+  var b = document.getElementById("priorityForm");
+  b.style.display = "none";
   var y = document.getElementById("outputArea");
   y.style.display = "block";
   getTickets()
@@ -175,11 +177,13 @@ function listTickets() {
 
 function listContacts() {
   var x = document.getElementById("form");
-  if (x.style.display === "block") {
-    x.style.display = "none";
-  } else {
-    x.style.display = "none";
-  }
+  x.style.display = "none";
+  var z = document.getElementById("Updateform");
+  z.style.display = "none";
+  var a = document.getElementById("statusForm");
+  a.style.display = "none";
+  var b = document.getElementById("priorityForm");
+  b.style.display = "none";
   var y = document.getElementById("outputArea");
   y.style.display = "block";
   getContacts()
@@ -283,13 +287,6 @@ form.addEventListener("submit", function (e) {
     });
 });
 
-function addContacts() {
-  var x = document.getElementById("form");
-  x.style.display = "block";
-  var y = document.getElementById("outputArea");
-  y.style.display = "none";
-}
-
 var API_KEY = "6ReCaAqI4JjSQwyVqxz";
 var form = document.getElementById("statusForm");
 form.addEventListener("submit", function (e) {
@@ -376,22 +373,53 @@ form.addEventListener("submit", function (e) {
 });
 
 function updateStatus() {
-  var x = document.getElementById("statusForm");
-  x.style.display = "block";
+  var x = document.getElementById("form");
+  x.style.display = "none";
+  var z = document.getElementById("Updateform");
+  z.style.display = "none";
+  var a = document.getElementById("statusForm");
+  a.style.display = "block";
+  var b = document.getElementById("priorityForm");
+  b.style.display = "none";
   var y = document.getElementById("outputArea");
   y.style.display = "none";
 }
 
 function updatePriority() {
-  var x = document.getElementById("priorityForm");
-  x.style.display = "block";
+  var x = document.getElementById("form");
+  x.style.display = "none";
+  var z = document.getElementById("Updateform");
+  z.style.display = "none";
+  var a = document.getElementById("statusForm");
+  a.style.display = "none";
+  var b = document.getElementById("priorityForm");
+  b.style.display = "block";
   var y = document.getElementById("outputArea");
   y.style.display = "none";
 }
 
 function updateContacts() {
-  var x = document.getElementById("Updateform");
+  var x = document.getElementById("form");
+  x.style.display = "none";
+  var z = document.getElementById("Updateform");
+  z.style.display = "block";
+  var a = document.getElementById("statusForm");
+  a.style.display = "none";
+  var b = document.getElementById("priorityForm");
+  b.style.display = "none";
+  var y = document.getElementById("outputArea");
+  y.style.display = "none";
+}
+
+function addContacts() {
+  var x = document.getElementById("form");
   x.style.display = "block";
+  var z = document.getElementById("Updateform");
+  z.style.display = "none";
+  var a = document.getElementById("statusForm");
+  a.style.display = "none";
+  var b = document.getElementById("priorityForm");
+  b.style.display = "none";
   var y = document.getElementById("outputArea");
   y.style.display = "none";
 }
