@@ -1,0 +1,217 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+.navigation__logo {
+  background-color: #02b875;
+  display: flex;
+  align-items: center;
+}
+.menu__icon {
+  height: 50px;
+  padding: 10px;
+}
+.nav__logo {
+  height: 40px;
+  padding: 10px;
+}
+.headerSection {
+  background-color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.headerSection > h3 {
+  font-weight: 500;
+}
+.contents {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.content__right {
+  display: flex;
+  align-items: center;
+  margin-left: 740px;
+}
+.content__right > button {
+  padding: 10px;
+  margin-left: 10px;
+  border: 1px solid gray;
+  border-radius: 6px;
+  font-weight: bolder;
+}
+.contents__right {
+  display: flex;
+  align-items: center;
+  padding: 4px;
+  border: 2px solid black;
+  border-radius: 8px;
+  margin: 10px;
+}
+.search__icon {
+  height: 30px;
+  width: 30px;
+}
+.contents__right > input {
+  border: none;
+}
+.icons {
+  height: 40px;
+  width: 40px;
+  padding: 5px;
+}
+.contents_rigth_pt {
+  display: flex;
+  align-items: center;
+}
+.contents_rigth_pt > h2 {
+  background-color: #2fac09;
+  padding: 11px;
+  margin: 8px;
+  font-size: medium;
+  border-radius: 8px;
+}
+.groupSection {
+  display: flex;
+  flex-direction: column;
+}
+.group__icon {
+  height: 40px;
+  object-fit: contain;
+  padding: 10px;
+}
+.group__icon_click {
+  height: 40px;
+  object-fit: contain;
+  padding: 10px;
+  cursor: pointer;
+}
+.group__icon_click:hover {
+  background-color: grey;
+}
+.group__icon_extra {
+  height: 40px;
+  object-fit: contain;
+  padding: 10px;
+  margin-top: 172px;
+}
+.section {
+  display: flex;
+}
+.displaySection {
+  background-color: #f5f7f9;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 60px;
+}
+.displaySection > h2 {
+  color: gray;
+  padding: 10px;
+  align-items: center;
+}
+.displaySection > button {
+  padding: 10px;
+  margin-left: 10px;
+  border: 1px solid gray;
+  border-radius: 6px;
+  font-weight: bolder;
+}
+.dropbtn {
+  background-color: #f5f7f9;
+  color: black;
+  padding: 10px;
+  font-size: 12px;
+  border: none;
+}
+.dropdown {
+  display: inline-block;
+  position: relative;
+}
+.dropdown > button {
+  font-size: large;
+}
+.dropdown-content {
+  position: absolute;
+  background-color: #fff;
+  min-width: 200px;
+  display: none;
+  z-index: 1;
+  border: 1px solid black;
+}
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+.dropdown-content a:hover {
+  background-color: #e0e0e0;
+  color: blue;
+}
+.toRight {
+  margin-left: 960px;
+}
+.table {
+  width: 100%;
+  height: 100%;
+  border-spacing: 6px;
+  border: 1px solid black;
+}
+th {
+  border: 1px solid black;
+  border-radius: 6px;
+  padding: 8px;
+}
+td {
+  border: 1px solid black;
+  border-radius: 6px;
+  padding: 8px;
+}
+thead {
+  background-color: #fff;
+}
+tbody {
+  background-color: #fff;
+  text-align: justify;
+}
+.buttonDesign {
+  background-color: #02b875;
+  padding: 10px;
+  border: none !important;
+  border-radius: 10px;
+  font-weight: 600;
+  margin-top: 10px;
+  margin-left: 20px;
+  font-size: large;
+  margin-bottom: 10px;
+  cursor: pointer;
+}
+.selectors {
+  background-color: #e5e7e9;
+}
+.formData {
+  display: none;
+  padding: 10px;
+  margin: 10px;
+}
+.formData > input {
+  width: 33%;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  margin: 10px;
+  margin-left: 500px;
+}
+.submitBtn {
+  background-color: #02b875;
+  width: 100px !important;
+  margin-left: 690px !important;
+  margin-top: 20px !important;
+}

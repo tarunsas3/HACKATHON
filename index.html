@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fresh Desk</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="navigation__logo">
+      <img
+        class="nav__logo"
+        src="https://indfassetsblue.freshdesk.com/production/a/assets/images/svg/global-flat/freshdesk-white-59e0f15580eb61bf94567e715566c64596436b00ccd631dd1ab35bb54f730675.svg"
+        alt="nav__logo"
+      />
+      <div class="headerSection">
+        <img
+          class="menu__icon"
+          src="https://cdn1.iconfinder.com/data/icons/modern-flat-app-gui-1/50/Menu-512.png"
+          alt="menu__icon"
+        />
+        <div class="contents">
+          <h3>All tickets</h3>
+          <div class="content__right">
+            <button>Get Started</button>
+            <button>New</button>
+          </div>
+          <div class="contents__right">
+            <img
+              class="search__icon"
+              src="https://cdn2.iconfinder.com/data/icons/ios-7-icons/50/search-512.png"
+              alt="search_icon"
+            />
+            <input type="text" placeholder="Search" />
+          </div>
+          <div class="contents_rigth_pt">
+            <img
+              class="icons"
+              src="https://www.pikpng.com/pngl/m/199-1993279_updates-notification-icon-png-vector-clipart.png"
+              alt="notification__icon"
+            />
+            <img
+              class="icons"
+              src="https://img.freepik.com/free-icon/present-box-with-big-bow_318-9536.jpg?size=338&ext=jpg"
+              alt="gift__icon"
+            />
+            <img
+              class="icons"
+              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQVo4oNROzdld0zPBgYd2-nDXuaOU9HCocPvA&usqp=CAU"
+              alt="schedule__icon"
+            />
+            <h2>T</h2>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="section">
+      <div class="groupSection">
+        <img
+          class="group__icon"
+          src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSq-EafRflPJ-S-Tf0NXh-mn_aGwDmho0ZBhw&usqp=CAU"
+          alt="dashboard__icon"
+        />
+        <img
+          onclick="listTickets()"
+          class="group__icon_click"
+          src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ1BHeerG13kKbUnZ4yn063hm4eKBQueaol0w&usqp=CAU"
+          alt="ticket__icon"
+        />
+        <img
+          onclick="listContacts()"
+          class="group__icon_click"
+          src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQXBI4OyBdatLrVutR2Ku7CXGTVb5MOq5BBQA&usqp=CAU"
+          alt="contact__icon"
+        />
+        <img
+          class="group__icon"
+          src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT8WZNBbd_2x4_pav4uOddt0KZRsz4WTb0pTg&usqp=CAU"
+          alt="solutions__icon"
+        />
+        <img
+          class="group__icon"
+          src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTzKxZXV21DpBT6I5JHPDLLYF0Cp2upFjddKQ&usqp=CAU"
+          alt="robo__icon"
+        />
+        <img
+          class="group__icon"
+          src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTbAw2HqmuYJ1Jfjpffz3emECZybuqhxSMqcw&usqp=CAU"
+          alt="analytics__icon"
+        />
+        <img
+          class="group__icon"
+          src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR-zD2kTzpQwrXAYfjydjQWQpM7gNCQ9fqV5Q&usqp=CAU"
+          alt="setting__icon"
+        />
+        <img
+          class="group__icon_extra"
+          src="https://accounts.freshworks.com/omnibar/assets/switcher.svg"
+          alt="freshworks__logo"
+        />
+      </div>
+      <div class="DataSection">
+        <div class="displaySection">
+          <h2>Sort by:</h2>
+          <div class="dropdown">
+            <button class="dropbtn">Date created</button>
+            <div class="dropdown-content">
+              <a href="#"> Date Created </a>
+              <a href="#"> Due by time </a>
+              <a href="#"> last modified </a>
+              <a href="#"> Priority </a>
+              <a href="#"> Status </a>
+            </div>
+          </div>
+          <h2 class="toRight">Layout:</h2>
+          <div class="dropdown">
+            <button class="dropbtn">Card view</button>
+            <div class="dropdown-content">
+              <a href="#"> Card view </a>
+              <a href="#"> Table view </a>
+            </div>
+          </div>
+          <button>Export</button>
+        </div>
+        <div class="selectors">
+          <button
+            id="listTickets"
+            type="button"
+            class="btn btn-primary btn-lg btn-block buttonDesign"
+            onclick="listTickets()"
+          >
+            List Tickets
+          </button>
+          <button
+            id="listContacts"
+            type="button"
+            class="btn btn-primary btn-lg btn-block buttonDesign"
+            onclick="listContacts()"
+          >
+            List Contacts
+          </button>
+          <button
+            id="addContacts"
+            type="button"
+            class="btn btn-primary btn-lg btn-block buttonDesign"
+            onclick="addContacts()"
+          >
+            Add Contacts
+          </button>
+          <button
+            id="updateStatus"
+            type="button"
+            class="btn btn-primary btn-lg btn-block buttonDesign"
+            onclick="updateStatus()"
+          >
+            Update Status
+          </button>
+          <button
+            id="updatePriority"
+            type="button"
+            class="btn btn-primary btn-lg btn-block buttonDesign"
+            onclick="updatePriority()"
+          >
+            Update Priority
+          </button>
+          <button
+            id="updateContacts"
+            type="button"
+            class="btn btn-primary btn-lg btn-block buttonDesign"
+            onclick="updateContacts()"
+          >
+            Update Contacts
+          </button>
+          <div class="dataValue" id="outputArea" style="margin-top: 10px"></div>
+          <form class="formData" id="form" method="POST">
+            <input type="text" id="email" placeholder="E mail" />
+            <input type="text" id="name" placeholder="Name" />
+            <input type="text" id="phone" placeholder="Phone Number" />
+            <input class="submitBtn" type="Submit" value="Add Contact" />
+          </form>
+          <form class="formData" id="Updateform" method="POST">
+            <input type="number" id="UPid" placeholder="Id" />
+            <input type="text" id="UPemail" placeholder="E mail" />
+            <input type="text" id="UPname" placeholder="Name" />
+            <input type="text" id="UPphone" placeholder="Phone Number" />
+            <input class="submitBtn" type="Submit" value="Update Contact" />
+          </form>
+          <form class="formData" id="statusForm" method="POST">
+            <input type="number" id="id" placeholder="Id" />
+            <input type="number" id="status" placeholder="Status" />
+            <input class="submitBtn" type="Submit" value="Update Status" />
+          </form>
+          <form class="formData" id="priorityForm" method="POST">
+            <input type="number" id="idp" placeholder="Id" />
+            <input type="number" id="priority" placeholder="Priority" />
+            <input class="submitBtn" type="Submit" value="Update Priority" />
+          </form>
+        </div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
