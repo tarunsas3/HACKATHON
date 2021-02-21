@@ -2,8 +2,10 @@ body {
   margin: 0;
   padding: 0;
 }
-.navigation__logo {
+.logobg {
   background-color: #02b875;
+}
+.navigation__logo {
   display: flex;
   align-items: center;
 }
@@ -27,16 +29,15 @@ body {
 .contents {
   display: flex;
   align-items: center;
-  justify-content: space-between;
 }
 .content__right {
   display: flex;
   align-items: center;
-  margin-left: 740px;
+  margin-left: 730px;
 }
 .content__right > button {
-  padding: 10px;
-  margin-left: 10px;
+  padding: 8px;
+  margin-right: 10px;
   border: 1px solid gray;
   border-radius: 6px;
   font-weight: bolder;
@@ -154,7 +155,7 @@ body {
   color: blue;
 }
 .toRight {
-  margin-left: 960px;
+  margin-left: 940px;
 }
 .table {
   width: 100%;
